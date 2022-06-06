@@ -1,0 +1,5 @@
+barra 16mm
+barra 12mm
+varilla rosca acme 5/8 pulgadas
+Thsl 8 
+Ruleman interior 5/8 pulgadas

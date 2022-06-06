@@ -1,0 +1,26 @@
+Universal Gcode sender
+feed rate aumenta o disminuye la velocidad de avance que tengas programada ($0)
+$$
+$0 x cuantos pasos necesitamos de pasos para avanzar recto step / mm       200 (pasos para dar una vuelta) / 6.35 (avance de 5/8 4h) = 31.496
+$1 y = x
+$2 z 200/ 8 = 25 
+$3 ancho de pulso que me reconoce el arduino default 10 ... esta en micro segundos
+$4 velocidad con carga 200mm/min
+$5 velocidad sin carga (esto es cuando va la fresa a posicionarse algun lugar) // probar con 200 mm/min
+$6 si tenes motores invertidos (mascaras)
+$7 tiempo de retardo despues de una orden (mili segundos) = 15 (se puede hasta 254 lento)
+$8 aceleracion (delicado) probar de apoco (30 m/s^2)
+$9  para las curvas
+$10 para las curvas
+$11 para las curvas
+$12 numero de decimales que trabaja
+$13 trabajo en mm o pulgadas 1mm
+$14 en 1 auto inicio
+$15 invertir enable
+$16 activar limites final de carreras para parar la maquina 
+$17 si lo activas cuando toques la $H buscará los puntos de carrera
+$18 para invertir (mascaras)
+$19 velocidad para volver al punto 0.0.0 
+$20 velocidad para volver al punto 0.0.0  (=$4$5)
+$21= tiempo que se espera para hacer homing p 0.0.0
+$22= desplazamiento que hace despues de tocar los finales de carrera
